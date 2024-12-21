@@ -1,0 +1,1 @@
+{"name":"Local: rafh","url":"f:\\sub123\\ttttt\\IMP file CODE\\rafh.cpp","tests":[{"id":1717682685091,"input":"1\n13 3\n2 3 9 14 17 10 22 20 18 30 1 4 28","output":"3 7 0 1 9 \n0 4 4 5 5 0 0 \n1 1 8 8 0 0 0 \n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\sub123\\ttttt\\IMP file CODE\\rafh.cpp","group":"local","local":true}

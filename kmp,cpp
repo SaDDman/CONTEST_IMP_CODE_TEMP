@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+/*
+    return longest common prefix ; 
+    abvbac
+    kmpstring -> abvbac#cabvba
+    kmp vector ->0000100012345 
+*/
+vector<ll>kmp ( string &s ) // take as s+#+rev(s)
+{
+    ll n = s.size();
+    vector<ll>pi(n,0);
+    f(r,1,s.size())
+    {
+        ll l = pi[r-1];
+        while ((l>0 && s[l]!=s[r]))
+        {
+            l=pi[l-1];
+        }
+        
+        pi[r]= l+(s[l]==s[r]); 
+    }
+    return pi;
+}
+string kmpstring ( string &ar , string &s )
+{
+    string rv = ar ; 
+    ar+='#';
+    ar+=s ; 
+    return ar; 
+}
